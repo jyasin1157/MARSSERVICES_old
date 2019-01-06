@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title><sub color="white">CONTACT</sub><sub ion-text color="primary">US</sub></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- <ion-list> -->
+    <!-- <ion-list-header>Follow us on Twitter and Facebook</ion-list-header> -->
+    <ion-item>
+      <!-- <ion-label floating>URL</ion-label>
+      <ion-input type="url" [(ngModel)]="url"></ion-input> -->
+      <ion-icon color="primary" name="thumbs-up"></ion-icon><h1 style="font-weight:bold">FOLLOW US</h1>
+    </ion-item>
+
+      <button (click)= "openfacebook(new)"><ion-icon style="zoom:3.0" color="primary" name="logo-facebook"></ion-icon></button>
+      <button (click)= "opentwitter(new)"><ion-icon style="zoom:3.0" color="primary" name="logo-twitter"></ion-icon></button>
+      <button (click)= "openinstagram(new)"><ion-icon style="zoom:3.0" color="primary" name="logo-instagram"></ion-icon></button>
+      <button (click)="load_openyelp()"><ion-icon style="zoom:3.0" color="primary" name="logo-fa-yelp"></ion-icon></button>
+      <i class="fa fa-yelp" style="font-size:48px: color: red"></i>
+
+    <!-- <button ion-button block clear (click)='ngOnInit()'>Open Webpage</button> -->
+    <ion-item>
+      <!-- <ion-label floating>URL</ion-label>
+      <ion-input type="url" [(ngModel)]="url"></ion-input> -->
+      <!-- <p style="font-weight: bold" ion-text color="primary"> -->
+        <!-- <ion-icon color="primary" style="zoom:1.5" name="home" style="font-weight: bold"></ion-icon>
+        <ion-icon name="vertical-bar"></ion-icon>
+          <h3 ion-text color="primary" style="font-weight:bold">OUR OFFICE - FORT WORTH</h3> -->
+
+      <p style="font-weight: bold" ion-text color="primary">
+        <ion-icon name="home" style="font-weight: bold">
+        OUR OFFICE - FORT WORTH
+        </ion-icon>
+        <!-- </ion-icon> -->
+      </p>
+      <p>
+        1663 Hickory Dr., Ste. B
+      </p>
+      <p>
+        Haltom City, TX 76177
+      </p>
+    </ion-item>
+    <ion-item>
+      <!-- <ion-label floating>URL</ion-label>
+      <ion-input type="url" [(ngModel)]="url"></ion-input> -->
+      <p style="font-weight: bold" ion-text color="primary">
+        <ion-icon name="home" style="font-weight: bold">
+        OUR OFFICE - DALLAS
+        </ion-icon>
+      </p>
+      <p>
+        3110 Webb Ave, Ste. 203
+      </p>
+      <p>
+        Dallas, TX 75205
+      </p>
+
+    </ion-item>
+    <ion-item>
+      <!-- <ion-label floating>URL</ion-label>
+      <ion-input type="url" [(ngModel)]="url"></ion-input> -->
+      <p style="font-weight: bold" ion-text color="primary">
+        <ion-icon name="phone-portrait" style="font-weight: bold">
+        CONTACT
+        </ion-icon>
+      </p>
+      <p>
+        Phone: <button (click)="opendialer()">817-386-4084</button>
+      </p>
+      <p>
+        Email:info@marservices.com
+      </p>
+    </ion-item>
+
+    <p padding>
+    </p>
+    <div>
+    <h2 ion-text style="text-align:center; font-weight:bold ">SEND US A<span ion-text color="primary"> MESSAGE</span></h2>
+    </div>
+    <ion-list>
+      <form #form="ngForm" (ngSubmit)="logForm(form)" novalidate>
+      <ion-item>
+      <!-- <ion-textarea placeholder="Name"></ion-textarea> -->
+      <ion-input placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+      <!-- <ion-textarea placeholder="Email Address"> -->
+      <ion-input type="email" placeholder="Email Address"></ion-input>
+      <!-- </ion-textarea> -->
+      </ion-item>
+      <ion-item>
+      <ion-input type="tel" placeholder="Phone"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-input type="text" placeholder="Message"></ion-input>
+      </ion-item>
+      </form>
+    </ion-list>
+    <!-- <ion-item> -->
+    <button ion-button item-center>SUBMIT</button>
+
+    <!-- </ion-item> -->
+    <!-- <ion-item>
+      <ion-input placeholder="Text Input"></ion-input>
+    </ion-item> -->
+    <ion-item>
+
+    </ion-item>
+    <button ion-button block clear (click)="openWebpage()">Open Webpage</button>
+
+  <!-- </ion-list> -->
+</ion-content>
